@@ -1,4 +1,4 @@
-// Last updated: 7/8/2026, 4:46:03 PM
+// Last updated: 7/8/2026, 4:47:14 PM
 1/**
 2 * @param {number} n
 3 * @return {number}
@@ -8,7 +8,7 @@
 7    let b = 1;
 8
 9    let sum = 0;
-10    let fib = [];
+10
 11
 12    if(n < 2){
 13            return n
