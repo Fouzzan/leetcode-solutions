@@ -1,4 +1,4 @@
-// Last updated: 7/8/2026, 4:47:14 PM
+// Last updated: 7/8/2026, 4:51:35 PM
 1/**
 2 * @param {number} n
 3 * @return {number}
@@ -20,15 +20,9 @@
 19        a = b;
 20        b = sum;
 21        
-22
-23
-24
-25        
-26    }
-27    }
-28  
-29    console.log(a);
-30        console.log(b);
-31    return sum;
-32    
-33};
+22    }
+23    }
+24  
+25    return sum;
+26    
+27};
