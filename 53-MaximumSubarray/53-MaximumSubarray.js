@@ -1,17 +1,24 @@
-// Last updated: 7/29/2026, 5:01:37 PM
+// Last updated: 8/8/2026, 4:13:21 AM
 1/**
 2 * @param {number[]} nums
 3 * @return {number}
 4 */
 5var maxSubArray = function(nums) {
-6    let result = nums[0];
-7    let maxEnd = nums[0];
-8    for (let i = 1; i < nums.length; i++){
-9        
-10        maxEnd = Math.max(maxEnd + nums[i], nums[i]);
-11
-12        result = Math.max(result, maxEnd);
-13    }
-14
-15    return result;
-16};
+6    let total = nums[0];
+7    let sum = 0;
+8    if(nums.length === 1){
+9        return nums[0]
+10    }
+11    for (let i = 0; i < nums.length; i++) {
+12        sum += nums[i];
+13
+14        sum = (sum < nums[i]? nums[i]: sum);
+15        
+16    // for(let j = i; j < nums.length; j++){
+17    //     sum += nums[j];
+18        total = Math.max(total, sum);
+19    // }
+20    
+21    }
+22    return total;
+23};
