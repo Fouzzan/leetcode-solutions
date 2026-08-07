@@ -1,4 +1,4 @@
-// Last updated: 8/8/2026, 4:13:21 AM
+// Last updated: 8/8/2026, 4:13:43 AM
 1/**
 2 * @param {number[]} nums
 3 * @return {number}
@@ -14,11 +14,10 @@
 13
 14        sum = (sum < nums[i]? nums[i]: sum);
 15        
-16    // for(let j = i; j < nums.length; j++){
-17    //     sum += nums[j];
-18        total = Math.max(total, sum);
-19    // }
-20    
-21    }
-22    return total;
-23};
+16   
+17        total = Math.max(total, sum);
+18    
+19    
+20    }
+21    return total;
+22};
