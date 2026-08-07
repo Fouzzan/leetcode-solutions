@@ -1,4 +1,4 @@
-// Last updated: 8/8/2026, 4:14:16 AM
+// Last updated: 8/8/2026, 4:15:48 AM
 1/**
 2 * @param {number[]} nums
 3 * @return {number}
@@ -6,13 +6,10 @@
 5var maxSubArray = function(nums) {
 6    let total = nums[0];
 7    let sum = 0;
-8    // if(nums.length === 1){
-9    //     return nums[0]
-10    // }
-11    for (let i = 0; i < nums.length; i++) {
-12        sum += nums[i];
-13        sum = (sum < nums[i]? nums[i]: sum);
-14        total = Math.max(total, sum);
-15    }
-16    return total;
-17};
+8    for (let i = 0; i < nums.length; i++) {
+9        sum += nums[i];
+10        sum = (sum < nums[i]? nums[i]: sum);
+11        total = Math.max(total, sum);
+12    }
+13    return total;
+14};
