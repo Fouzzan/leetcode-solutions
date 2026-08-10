@@ -1,9 +1,16 @@
-// Last updated: 8/10/2026, 12:57:40 PM
+// Last updated: 8/10/2026, 1:06:24 PM
 1/**
 2 * @param {number[]} nums
 3 * @return {boolean}
 4 */
 5var containsDuplicate = function(nums) {
-6    let arr = [...new Set(nums)]
-7   return (arr.length === nums.length)? false : true;
-8};
+6    let map = new Map();
+7    for(let i = 0; i < nums.length; i++){
+8        if(map.has(nums[i])){
+9            return true;
+10        }
+11        map.set(nums[i],i);
+12
+13    }
+14    return false
+15};
