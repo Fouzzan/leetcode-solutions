@@ -1,4 +1,4 @@
-// Last updated: 8/11/2026, 7:09:44 AM
+// Last updated: 8/11/2026, 7:10:01 AM
 1/**
 2 * @param {string} s
 3 * @param {string} t
@@ -7,7 +7,7 @@
 6var isAnagram = function(s, t) {
 7     let map1 = new Map();
 8     let map2 = new Map();
-9     
+9
 10    if(s.length !== t.length) return false;
 11
 12    for(let i = 0; i < s.length; i++){
@@ -25,18 +25,16 @@
 24       }
 25    }
 26
-27    console.log(map1);
-28    console.log(map2);
-29    if(map1.size !== map2.size) return false;
-30    for(let [key, value] of map1){
-31        if(!map2.has(key)){
-32            
-33            return false;
-34        }
-35        if(map1.get(key) !== map2.get(key)){
-36            return false;
-37        }
-38    }
-39
-40    return true;
-41};
+27    if(map1.size !== map2.size) return false;
+28    for(let [key, value] of map1){
+29        if(!map2.has(key)){
+30            
+31            return false;
+32        }
+33        if(map1.get(key) !== map2.get(key)){
+34            return false;
+35        }
+36    }
+37
+38    return true;
+39};
