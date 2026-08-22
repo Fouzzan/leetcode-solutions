@@ -1,4 +1,4 @@
-// Last updated: 8/10/2026, 11:32:05 AM
+// Last updated: 8/22/2026, 11:20:43 AM
 1/**
 2 * @param {number[]} prices
 3 * @return {number}
@@ -12,5 +12,5 @@
 11    }
 12    profit = Math.max(profit, (prices[i] - buy));
 13 } 
-14   return profit
+14   return profit;
 15};
