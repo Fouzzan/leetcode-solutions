@@ -1,4 +1,4 @@
-// Last updated: 9/21/2026, 1:33:50 PM
+// Last updated: 9/21/2026, 1:34:12 PM
 1/**
 2 * @param {number} numRows
 3 * @return {number[][]}
@@ -19,8 +19,7 @@
 18            
 19            
 20        }
-21        console.log(result);
-22    }
-23
-24    return result;
-25};
+21    }
+22
+23    return result;
+24};
