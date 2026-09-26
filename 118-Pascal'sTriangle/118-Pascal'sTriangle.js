@@ -1,4 +1,4 @@
-// Last updated: 9/21/2026, 1:34:12 PM
+// Last updated: 9/26/2026, 11:16:39 PM
 1/**
 2 * @param {number} numRows
 3 * @return {number[][]}
