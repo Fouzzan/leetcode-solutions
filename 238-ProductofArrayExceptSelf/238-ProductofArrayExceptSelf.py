@@ -1,25 +1,17 @@
-# Last updated: 10/18/2026, 2:39:36 PM
+# Last updated: 11/23/2026, 8:37:08 PM
 1class Solution:
 2    def productExceptSelf(self, nums: list[int]) -> list[int]:
-3        
-4        result = []
-5        leftProduct = 1
-6        rightProduct = 1
-7        left = []
-8        for i in range(len(nums)):
-9            result.append(leftProduct)
-10            leftProduct *= nums[i]
-11        for j in range(len(nums) - 1, -1, -1):
-12            result[j] *= rightProduct
-13            rightProduct *= nums[j]
+3        result = [1] * len(nums)
+4        suffix = 1
+5        prefix = 1
+6        for y in range(len(nums)):
+7            print(y)
+8            result[y] = prefix
+9            prefix *= nums[y]
+10        for x in range(len(nums) - 1, -1, -1):
+11            result[x] *= suffix
+12            suffix *= nums[x]
+13        
 14        return result
-15            
-16            
-17                
-18            
-19        return result            
-20
-21        
-22
-23
-24    
+15
+16        
